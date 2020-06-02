@@ -58,12 +58,11 @@ export default function Projects() {
       await api_github
         .get(`/${repo_name}`, {
           headers: {
-            Authorization: "c8b33459a9e0450c680d7dbcc14b69045f3de75d",
+            Authorization: process.env.REACT_APP_GIT_TOKEN,
           },
         })
         .then((response) => {
           setData(response.data);
-          // console.log(response.data.name);
         });
     } catch (err) {
       // alert('Search Error!')
