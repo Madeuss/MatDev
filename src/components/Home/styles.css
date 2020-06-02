@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.home-container {
+  transition: ease-in-out .6s;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  align-content: center;
+}
+
+.body-home {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.hey-there{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hey-there #hey {
+  display: flex;
+  color: #818181;
+  align-items: center;
+  font-family: 'Argon PERSONAL', sans-serif;
+}
+
+.hey-there #hey #hey-line {
+  margin-top: 40px;
+  width: 40px;
+  height: 5px;
+  background-color: #31B5FF;
+  font-family: 'Arial', sans-serif !important;
+}
+
+#main-text {
+  display: flex;
+  align-items: center;
+}
+
+#heyy {
+  text-align: center;
+}
+
+.home-text .hows {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .05em;
+  color: #b6b6b6;
+  text-align: center;
+  font-weight: 600;
+}
+
+.home-text #hi-five {
+  cursor: grab;
+}
+
+.home-text #hi-five img {
+  width: 6rem;
+}
+
+.home-text #hi-five img:hover {
+  animation: hifivepulse infinite 2s ease-in-out;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50px - .2em);
+  cursor: pointer;
+  display: flex;
+  transform: rotate(270deg);
+}
+
+.scroll .arrow {
+  margin: 10px;
+  height: 40px;
+  width: 20px;
+  transition: ease-in-out .3s;
+}
+
+.scroll:hover .arrow {
+  transform: translateX(-15px);
+  transition: ease-in-out .4s;
+}
+
+.scroll:hover > p {
+  color: rgb(255, 255, 255) !important;
+  transition: color .4s;
+}
+
+.scroll p {
+  font-size: 1.2rem;
+  color: #818181;
+  letter-spacing: .2em;
+  transition: color .4s;
+}
+
+.social-media {
+  display: grid;
+  grid-gap: 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+
+.social-media a .social-icon:hover {
+  color: rgb(255, 255, 255) !important;
+  transition: all .2s;
+}
+
+.social-media a .social-icon {
+  width: 2.3em;
+  transition: .3s;
+}
+
+@keyframes hifivepulse {
+  0% {
+    transform: scale(1);
+    transition: ease-in-out .2s;
+  }
+
+  50% {
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+  }
+
+  100% {
+    transform: scale(1);
+    transition: ease-in-out .2s;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .scroll {
+    left: 20px;
+    transition: all .3s;
+  }
+
+  .social-media {
+    right: 20px;
+    transition: all .3s;
+  }
+
+  .scroll p{
+    font-size: 2rem;
+  }
+
+  #main-text {
+    display: inline-block;
+  }
+  
+  #heyy {
+    text-align: center;
+  }
+  
+  #there {
+    margin: -20px;
+  }
+
+  .hey-there #hey {
+    margin-left: -25px;
+  }
+
+}
+
+@media screen and (max-width: 525px) {
+  .home-text .hows {
+    font-size: 3.2rem;
+  }
+
+  .scroll p{
+    font-size: 2.5rem;
+  }
+
+  .home-text #hi-five img {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hey-there #hey #hey-line {
+    width: 0px;
+  }
+  .home-text .hows {
+    font-size: 4rem;
+  }
+  .home-text #hi-five img {
+    width: 11rem;
+  }
+}

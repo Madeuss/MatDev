@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.projects-container {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  margin-top: 245vh;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 10%;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+#info-section .social-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: .3s;
+}
+
+#info-section .social-icon:hover {
+  color: rgb(255, 255, 255) !important;
+  transition: all .2s;
+}
+
+.slide-count {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0s;
+  position: absolute;
+  top: 90px;
+}
+
+.slide-count h3 {
+  color: #fff;
+}
+
+.slide-count .line-progress {
+  width: 60%;
+  height: 2px;
+  background-color: #494949;
+  position: relative;
+}
+.slide-count .line-progress:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background-color: #07C4FF;
+  animation: fill-line 1s linear;
+  transition: ease-in;
+  
+}
+
+@keyframes fill-line {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.project-data {
+  width: 80%;
+}
+
+.project-data h1 {
+  font-size: 2em;
+  color: #fff;
+  line-height: 1.6em;
+}
+
+.project-data p {
+  font-size: 1em;
+  text-align: justify;
+  color: #545454;
+  line-height: 1.6em;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 93%;
+  margin-bottom: 50px;
+  transform: rotate(270deg);
+}
+
+.project-title h2 {
+  font-size: 1.2em;
+  color: rgb(204, 204, 204, .6);
+}
+
+.project-title div {
+  width: 65px;
+  margin-top: 15px;
+  height: .5px;
+  background-color: rgb(161, 161, 161);
+  opacity: .6;
+}
+
+#repo-section {
+  position: relative;
+}
+
+.project-description {
+  background-color: #222222;
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  margin-left: -40px;
+  z-index: 2;
+}
+.project-description .desc-item:nth-child(2) {
+  margin-top: 40px;
+}
+
+.project-description .desc-item h3{
+  color: rgb(126, 195, 255);
+}
+
+.project-description p {
+  color: #fff;
+  font-size: .9em;
+  font-style: italic;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  left: -80vw;
+  bottom: 10%;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  right: 48vw;
+  bottom: 10%;
+  pointer-events: none;
+  opacity: .5;
+  z-index: 1;
+}
+
+.see-app {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.see-app a:link {
+  text-decoration: none;
+}
+
+.see-app a {
+  color: rgb(117, 117, 117);
+}
+
+.see-app span {
+  display: flex;
+  transition: .3s;
+}
+
+.see-app span:hover {
+  color: #07C4FF;
+  transition: .3s;
+}
+
+.see-app .mdweb-icon{
+  margin-left: 10px;
+}
+
+.see-more {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+  z-index: 1;
+  width: 60%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #020202;
+}
+.see-more h5 {
+  font-size: 1.1em;
+  color: #161616;
+  letter-spacing: .1em;
+}
+.see-more a:link {
+  text-decoration: none;
+}
+
+#explore {
+  color: #31bcff;
+  cursor: pointer;
+}
+
+.arrow {
+  margin: 10px;
+  height: 40px;
+  width: 30px;
+  color: #111111;
+  transition: ease-in-out .3s;
+}
+
+#explore:hover > .arrow {
+  cursor: pointer;
+  transform: translateX(20px);
+  transition: ease-in-out .3s;
+}
+
+.slide-div {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-item {
+  pointer-events: none !important;
+    outline:none;
+    text-indent:-9999px;
+}
+
+#pokedex-slide {
+  padding: 20px 0 0 50px;
+  align-items: flex-start;
+  background-color: #94d8fa;
+}
+
+#pokedex-slide img{
+  width: 35% !important;
+  height: 75%;
+}
+
+#covid-tracker-slide, #currency-conv-slide {
+  position: relative;
+}
+#covid-tracker-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#weather-app-slide {
+  background: url('./assets/weather_app_bg.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#currency-conv-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 830px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-description {
+    margin-left: 0;
+    width: 40%;
+  }
+
+  .slide-div {
+    height: 260px;
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .slide-count {
+    top: 30px;
+  }
+
+  .slideshow {
+    pointer-events: none !important;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .project-data h1 {
+    font-size: 3em;
+  }
+  .project-data p {
+    font-size: 1.8em;
+  }
+
+  .project-description .desc-item h3{
+    font-size: 1.6em;
+  }
+  .project-description p {
+    font-size: 1.3em;
+  }
+
+  .see-app h5 {
+    font-size: 1.5em;
+  }
+
+  .see-more h5, .see-more p {
+    font-size: 1.5em;
+  }
+
+  .project-title h2 {
+    font-size: 2em;
+    color: rgb(204, 204, 204, .6);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .project-data h1 {
+    font-size: 4em;
+  }
+  .project-data p {
+    font-size: 2.5em;
+  }
+
+  .project-description .desc-item h3{
+    font-size: 2.5em;
+  }
+  .project-description p {
+    font-size: 2em;
+  }
+
+  .see-app h5 {
+    font-size: 2em;
+  }
+
+  .see-more h5, .see-more p {
+    font-size: 2.8em;
+  }
+}

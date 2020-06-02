@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-padding-top: 150px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+  background-color: #232323;
+}
+
+::-webkit-scrollbar-track {
+  border: 10px solid #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #31B5ff;
+}
+
+@media screen and (max-width: 2560px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media screen and (max-width: 527px) {
+  html {
+    font-size: 27%;
+  }
+}
+@media screen and (max-width: 417px) {
+  html {
+    font-size: 23%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 17%;
+  }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.feedback-container {
+  position: absolute;
+  margin-top: 345vh;
+  background-color: #111111;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#feedback-header {
+  margin-top: 3vh;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#feedback-header #title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#feedback-header #title h1 {
+  color: #252525;
+  font-size: clamp(2em, 1em + 5vw, 12rem);
+  letter-spacing: 0.1em;
+}
+
+#feedback-header #title p {
+  position: absolute;
+  opacity: .8;
+  color: #07C4FF;
+  font-size: clamp(.8em, 1em + .8vw, 4rem);
+}
+
+#dialogue {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(.8em, .7em + .01vw, 3rem);
+}
+
+#dialogue p + p {
+  text-align: center;
+}
+
+.swiper-container {
+  margin-top: -30px;
+  width: 65%;
+  height: 95%;
+  border-radius: 3px;
+  background: #151515;
+  box-shadow: 5px 5px 15px 2px #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide {
+  color:#fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.swiper-slide .feedback-photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: rgb(162, 224, 243);
+  position: absolute;
+  top: 20px;
+}
+
+.swiper-slide #quotation-icon {
+  margin-top: 25px;
+}
+
+.swiper-slide .feedback-text {
+  width: 80%;
+  font-size: clamp(.8em, .9em, 3rem);
+  font-style: italic;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.swiper-slide .feedback-name {
+  position: absolute;
+  bottom: 10px;
+  font-size: clamp(.8em, .8em, 3rem);
+}
+
+.swiper-slide .feedback-name p:nth-child(1) {
+  color: #07C4FF;
+  margin: 3px 0 0 -5px;
+}
+
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  font-size: 5px !important;
+  color: #07C4FF;
+}
+
+@media screen and (max-width: 740px) {
+  #dialogue {
+    font-size: 1.1em;
+  }
+
+  .swiper-slide .feedback-text {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #dialogue {
+    font-size: 1.4em;
+  }
+
+  .swiper-slide .feedback-text {
+    font-size: 1.4em;
+  }
+
+  .swiper-slide .feedback-name {
+    font-size: 1.4em;
+  }
+  
+  .swiper-slide #quotation-icon {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #dialogue {
+    font-size: 2em;
+  }
+
+  .swiper-slide .feedback-text {
+    font-size: 2em;
+  }
+
+  .swiper-slide .feedback-name {
+    font-size: 2em;
+  }
+}

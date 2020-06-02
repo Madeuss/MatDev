@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header {
+  z-index: 99;
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  transition: all ease .2s;
+  display: flex;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 50px 0 0 50px;
+  transition: all .5s;
+}
+
+.header .logo h2 {
+  color: white;
+  font-size: 2.8rem;
+}
+
+.header .logo span {
+  color: #31B5FF;
+}
+
+.logo-opacity {
+  transform: translateY(-120px);
+  transition: ease-in-out 2s;
+}
+
+.navbar {
+  width: 40%;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: -40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right .8s cubic-bezier(0.6, 0, 0, .9);
+}
+
+.burger {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.burger:hover > .line {
+  background-color: #fff;
+  transition: .3s;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  transition: ease-in-out .3s;
+}
+
+.line-2 {
+  width: 80%;
+}
+
+.change {
+  right: 0;
+}
+
+.change .line {
+  margin: -20px -20px 0;
+  transition: ease-in-out .3s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+  background-color: #31B5FF !important;
+  transition: ease-in-out .5s;
+}
+
+.change .line-2 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: ease-in-out .3s;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+  background-color: #31B5FF !important;
+  transition: ease-in-out .5s;
+}
+
+.nav-list {
+  text-align: right;
+  margin: 0 auto;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 25px;
+  color: #eee;
+  transition: all .1s;
+}
+
+.nav-list:hover > .nav-item .nav-link {
+  opacity: 0;
+  transition: ease-in-out .3s;
+}
+
+.nav-item .nav-link:hover {
+  transform: scale(1.2);
+  transition: ease-in-out .3s;
+  z-index: 98;
+  opacity: 1 !important;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+  transition: all .1s;
+  display: inline-block;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+.nav-item #contact {
+  color: #31B5FF;
+}
+
+.nav-item .nav-link::before, 
+.nav-item .nav-link::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #31B5FF;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+ /*Contact*/
+.nav-item:last-child .nav-link:before, 
+.nav-item:last-child .nav-link:after {
+  background-color: #fff;
+}
+
+.nav-item .nav-link:before {
+  top: 0;
+  transform-origin: left;
+}
+.nav-item .nav-link:after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-item .nav-link:hover::before,
+.nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-item .active::before,
+.nav-item .active::after {
+  transform: scaleX(1);
+  transition: linear .1s;
+}
+
+.nav-item:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 20px;
+  transition: .5s;
+  white-space: nowrap;
+}
+
+.nav-item:hover:before {
+  opacity: .05;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .logo {
+    margin: 20px 0 0 20px !important;
+    transition: all .3s;
+  }
+
+  .burger {
+    top: 30px;
+    right: 20px;
+    transition: all .3s;
+  }
+}
+@media screen and (max-width: 645px) {
+  .nav-item:before {
+    font-size: 4rem !important;
+  }
+
+  .header .logo h2 {
+    color: white;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-link {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .line {
+    width: 80%;
+  }
+  .line-2 {
+    width: 60%;
+  }
+
+  .header .logo h2 {
+    color: white;
+    font-size: 5rem;
+  }
+}
