@@ -56,14 +56,34 @@ export default function Contact() {
             <FaWhatsapp id="whatsapp-icon" size={35} color={"#B0B0B0"} />
           </a>
         </span>
-        <section className="gif">
+        <section
+          className="gif"
+          data-aos="fade-right"
+          data-aos-offset="-200"
+          data-aos-delay="900"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <h1>CONTACT</h1>
           <h1>CONTACT</h1>
           <h1>CONTACT</h1>
           <img src={gif} alt="Hi-five contact gif" />
         </section>
 
-        <div id="astronaut-div">
+        <div
+          id="astronaut-div"
+          data-aos="fade-bottom"
+          data-aos-offset="-500"
+          data-aos-delay="1200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <img src={astronaut} alt="Astronaut image" />
         </div>
       </aside>

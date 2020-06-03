@@ -26,13 +26,33 @@ export default function About() {
           </a>
         </span>
         <aside className="photo-aside">
-          <div className="photo">
+          <div
+            className="photo"
+            data-aos="fade-right"
+            data-aos-offset="-100"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <img src={vector} alt="vector" />
             <img src={me} alt="Photo of Mateus" />
           </div>
         </aside>
         <aside className="about-aside">
-          <div className="info">
+          <div
+            className="info"
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             {/* eslint-disable-next-line */}
             <h2>
               Hey! my name is <span>Mateus</span>, you can call me{" "}
@@ -42,7 +62,17 @@ export default function About() {
             </h2>
             <p>Feel free to text me :D</p>
           </div>
-          <div className="about-btns">
+          <div
+            className="about-btns"
+            data-aos="fade-left"
+            data-aos-offset="-150"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <a
               href="https://www.canva.com/design/DADxssIUHWQ/xqaGQ1xK6AtA_NJKaLncdA/view?utm_content=DADxssIUHWQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               target="_blank"
@@ -69,7 +99,17 @@ export default function About() {
           </div>
         </aside>
       </container>
-      <section className="bottom-title">
+      <section
+        className="bottom-title"
+        data-aos="fade-top"
+        data-aos-offset="-500"
+        data-aos-delay="1200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <h1>BOUT</h1>
         <h1>ABOUT</h1>
         <h1>ABOUT</h1>

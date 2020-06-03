@@ -146,7 +146,17 @@ export default function Projects() {
             <div className="line-progress" id="line-count" />
             <h3>03</h3>
           </section>
-          <section className="project-data">
+          <section
+            className="project-data"
+            data-aos="fade-right"
+            data-aos-offset="-400"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Covid-19-Tracker</h1>
             <p>
               😷This is an web app wich tracks the Covid-19 incidents around the
@@ -200,7 +210,17 @@ export default function Projects() {
           </Carousel.Item>
         </Carousel>
 
-        <div className="project-description">
+        <div
+          className="project-description"
+          data-aos="fade-bottom"
+          data-aos-offset="-500"
+          data-aos-delay="1200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <div className="desc-item">
             <h3>Project</h3>
             {data.name ? <p>{data.name}</p> : <p>Covid-19-Tracker</p>}
@@ -236,7 +256,17 @@ export default function Projects() {
             )}
           </div>
         </div>
-        <div className="see-more">
+        <div
+          className="see-more"
+          data-aos="fade-top"
+          data-aos-offset="-500"
+          data-aos-delay="1200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+        >
           <h5>See more?</h5>
           {data.html_url ? (
             <a href={data.html_url} target="_blank" rel="noopener noreferrer">
