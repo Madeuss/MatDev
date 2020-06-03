@@ -11,40 +11,52 @@
 
 .loading-container img {
   width: 22rem;
-  /* height: 290px; */
 }
 
 #name {
-  animation: full-fill 0.5s ease forwards .9s;
+  animation: full-fill 0.5s ease forwards 0.9s;
 }
 
-#name path:nth-child(1){
+#name path:nth-child(1) {
   stroke-dasharray: 755px;
   stroke-dashoffset: 755px;
-  animation: anim 1.5s ease forwards .2s;
+  animation: anim 1.5s ease forwards 0.2s;
 }
-#name path:nth-child(2){
+#name path:nth-child(2) {
   stroke-dasharray: 490px;
   stroke-dashoffset: 490px;
-  animation: anim 1.5s ease forwards .4s;
+  animation: anim 1.5s ease forwards 0.4s;
 }
-#name path:nth-child(3){
+#name path:nth-child(3) {
   stroke-dasharray: 572px;
   stroke-dashoffset: 572px;
-  animation: anim 0.5s forwards .6s;
+  animation: anim 0.5s forwards 0.6s;
 }
 
-@keyframes anim{
-  to{
-      stroke-dashoffset: 0;
+@keyframes anim {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-@keyframes full-fill{
-  from{
-      fill: transparent;
+@keyframes full-fill {
+  from {
+    fill: transparent;
   }
-  to{
-      fill: #7bd4e8;
+  to {
+    fill: #7bd4e8;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loading-container img {
+    width: 20em !important;
+    margin: 0 auto;
+  }
+
+  #name {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 auto;
   }
 }
