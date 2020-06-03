@@ -35,7 +35,7 @@ export default function Contact() {
       setInterval(() => {
         setStatus("Contact me");
       }, 2500);
-      axios.post("http://localhost:3001/send", values);
+      axios.post(`${process.env.REACT_APP_NODEMAILER_URL}/send`, values);
       setTimeout(() => {
         setStatus("Sending...");
       }, 100);
