@@ -109,7 +109,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 .about-btns a:link {
@@ -156,7 +156,6 @@
   align-items: flex-end;
   justify-content: space-between;
   text-align: justify;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 }
 
 .bottom-title h1 {
@@ -210,12 +209,6 @@
   .about-btns #cv-btn {
     margin: 20px auto;
     font-size: 1.8em;
-  }
-
-  .about-btns #text-me-btn {
-    margin: 20px auto;
-    font-size: 4em;
-    color: rgb(66, 66, 66);
   }
 }
 

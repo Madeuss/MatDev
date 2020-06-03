@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .home-container {
-  transition: ease-in-out .6s;
-  font-family: 'Poppins', sans-serif;
+  transition: ease-in-out 0.6s;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 
-.hey-there{
+.hey-there {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,15 +30,15 @@
   display: flex;
   color: #818181;
   align-items: center;
-  font-family: 'Argon PERSONAL', sans-serif;
+  font-family: "Argon PERSONAL", sans-serif;
 }
 
 .hey-there #hey #hey-line {
   margin-top: 40px;
   width: 40px;
   height: 5px;
-  background-color: #31B5FF;
-  font-family: 'Arial', sans-serif !important;
+  background-color: #31b5ff;
+  font-family: "Arial", sans-serif !important;
 }
 
 #main-text {
@@ -51,9 +51,9 @@
 }
 
 .home-text .hows {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #b6b6b6;
   text-align: center;
   font-weight: 600;
@@ -74,7 +74,7 @@
 .scroll {
   position: absolute;
   bottom: 40px;
-  left: calc(50px - .2em);
+  left: calc(50px - 0.2em);
   cursor: pointer;
   display: flex;
   transform: rotate(270deg);
@@ -84,24 +84,24 @@
   margin: 10px;
   height: 40px;
   width: 20px;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .scroll:hover .arrow {
   transform: translateX(-15px);
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
 }
 
 .scroll:hover > p {
   color: rgb(255, 255, 255) !important;
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
 .scroll p {
   font-size: 1.2rem;
   color: #818181;
-  letter-spacing: .2em;
-  transition: color .4s;
+  letter-spacing: 0.2em;
+  transition: color 0.4s;
 }
 
 .social-media {
@@ -114,54 +114,54 @@
 
 .social-media a .social-icon:hover {
   color: rgb(255, 255, 255) !important;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .social-media a .social-icon {
   width: 2.3em;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 @keyframes hifivepulse {
   0% {
     transform: scale(1);
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
   }
 
   50% {
     transform: scale(1.1);
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
   }
 
   100% {
     transform: scale(1);
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
   }
 }
 
 @media screen and (max-width: 680px) {
   .scroll {
     left: 20px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .social-media {
     right: 20px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
-  .scroll p{
+  .scroll p {
     font-size: 2rem;
   }
 
   #main-text {
     display: inline-block;
   }
-  
+
   #heyy {
     text-align: center;
   }
-  
+
   #there {
     margin: -20px;
   }
@@ -169,7 +169,6 @@
   .hey-there #hey {
     margin-left: -25px;
   }
-
 }
 
 @media screen and (max-width: 525px) {
@@ -177,7 +176,7 @@
     font-size: 3.2rem;
   }
 
-  .scroll p{
+  .scroll p {
     font-size: 2.5rem;
   }
 
