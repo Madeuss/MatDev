@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .projects-container {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   height: 100vh;
   background-color: black;
@@ -26,12 +26,12 @@
   position: absolute;
   top: 30px;
   right: 30px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #info-section .social-icon:hover {
   color: rgb(255, 255, 255) !important;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .slide-count {
@@ -55,14 +55,13 @@
   position: relative;
 }
 .slide-count .line-progress:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   height: 2px;
-  background-color: #07C4FF;
+  background-color: #07c4ff;
   animation: fill-line 1s linear;
   transition: ease-in;
-  
 }
 
 @keyframes fill-line {
@@ -111,15 +110,15 @@
 
 .project-title h2 {
   font-size: 1.2em;
-  color: rgb(204, 204, 204, .6);
+  color: rgb(204, 204, 204, 0.6);
 }
 
 .project-title div {
   width: 65px;
   margin-top: 15px;
-  height: .5px;
+  height: 0.5px;
   background-color: rgb(161, 161, 161);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #repo-section {
@@ -139,13 +138,13 @@
   margin-top: 40px;
 }
 
-.project-description .desc-item h3{
+.project-description .desc-item h3 {
   color: rgb(126, 195, 255);
 }
 
 .project-description p {
   color: #fff;
-  font-size: .9em;
+  font-size: 0.9em;
   font-style: italic;
 }
 
@@ -168,7 +167,7 @@
   right: 48vw;
   bottom: 10%;
   pointer-events: none;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1;
 }
 
@@ -189,15 +188,15 @@
 
 .see-app span {
   display: flex;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .see-app span:hover {
-  color: #07C4FF;
-  transition: .3s;
+  color: #07c4ff;
+  transition: 0.3s;
 }
 
-.see-app .mdweb-icon{
+.see-app .mdweb-icon {
   margin-left: 10px;
 }
 
@@ -217,7 +216,7 @@
 .see-more h5 {
   font-size: 1.1em;
   color: #161616;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 .see-more a:link {
   text-decoration: none;
@@ -233,13 +232,13 @@
   height: 40px;
   width: 30px;
   color: #111111;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 #explore:hover > .arrow {
   cursor: pointer;
   transform: translateX(20px);
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .slide-div {
@@ -253,8 +252,8 @@
 
 .slide-item {
   pointer-events: none !important;
-    outline:none;
-    text-indent:-9999px;
+  outline: none;
+  text-indent: -9999px;
 }
 
 #pokedex-slide {
@@ -263,12 +262,13 @@
   background-color: #94d8fa;
 }
 
-#pokedex-slide img{
+#pokedex-slide img {
   width: 35% !important;
   height: 75%;
 }
 
-#covid-tracker-slide, #currency-conv-slide {
+#covid-tracker-slide,
+#currency-conv-slide {
   position: relative;
 }
 #covid-tracker-slide img {
@@ -278,7 +278,7 @@
 }
 
 #weather-app-slide {
-  background: url('./assets/weather_app_bg.jpeg') no-repeat;
+  background: url("./assets/weather_app_bg.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -293,7 +293,7 @@
   .projects-container {
     grid-template-columns: 1fr;
   }
-  
+
   .project-description {
     margin-left: 0;
     width: 40%;
@@ -310,10 +310,13 @@
     top: 30px;
   }
 
-  .slideshow {
-    pointer-events: none !important;
+  .carousel-control-next-icon {
+    position: initial;
   }
 
+  .carousel-control-prev-icon {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -324,7 +327,7 @@
     font-size: 1.8em;
   }
 
-  .project-description .desc-item h3{
+  .project-description .desc-item h3 {
     font-size: 1.6em;
   }
   .project-description p {
@@ -335,13 +338,14 @@
     font-size: 1.5em;
   }
 
-  .see-more h5, .see-more p {
+  .see-more h5,
+  .see-more p {
     font-size: 1.5em;
   }
 
   .project-title h2 {
     font-size: 2em;
-    color: rgb(204, 204, 204, .6);
+    color: rgb(204, 204, 204, 0.6);
   }
 }
 
@@ -353,7 +357,7 @@
     font-size: 2.5em;
   }
 
-  .project-description .desc-item h3{
+  .project-description .desc-item h3 {
     font-size: 2.5em;
   }
   .project-description p {
@@ -364,7 +368,8 @@
     font-size: 2em;
   }
 
-  .see-more h5, .see-more p {
+  .see-more h5,
+  .see-more p {
     font-size: 2.8em;
   }
 }
