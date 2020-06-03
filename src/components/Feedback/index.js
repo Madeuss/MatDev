@@ -55,7 +55,7 @@ export default function Contact() {
         className="swiper-container"
         data-aos="fade-right"
         data-aos-offset="0"
-        data-aos-delay="800"
+        data-aos-delay="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"

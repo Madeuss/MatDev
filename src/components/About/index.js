@@ -30,7 +30,7 @@ export default function About() {
             className="photo"
             data-aos="fade-right"
             data-aos-offset="-100"
-            data-aos-delay="900"
+            data-aos-delay="100"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"

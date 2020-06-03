@@ -21,7 +21,7 @@ export default function About() {
         className="hobbies"
         data-aos="fade-top"
         data-aos-offset="-200"
-        data-aos-delay="1200"
+        data-aos-delay="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
