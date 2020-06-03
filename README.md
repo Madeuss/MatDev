@@ -44,7 +44,7 @@
 - 
 - 
 
-## 🤔 Configuração do projeto
+## 🤔 Project config 
 
 - Clone the repository
 - *npm init/yarn command*
