@@ -34,9 +34,9 @@ export default function Contact() {
         <section
           id="dialogue"
           data-aos="fade-left"
-          data-aos-offset="-100"
+          data-aos-offset="0"
           data-aos-delay="1200"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
@@ -53,9 +53,9 @@ export default function Contact() {
       {/* <!-- Swiper --> */}
       <div
         className="swiper-container"
-        data-aos="fade-left"
-        data-aos-offset="-140"
-        data-aos-delay="1400"
+        data-aos="fade-right"
+        data-aos-offset="0"
+        data-aos-delay="800"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
