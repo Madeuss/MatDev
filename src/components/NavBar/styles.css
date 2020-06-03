@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .header {
   z-index: 99;
@@ -8,8 +8,8 @@
   display: flex;
   position: fixed;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
-  transition: all ease .2s;
+  font-family: "Poppins", sans-serif;
+  transition: all ease 0.2s;
   display: flex;
 }
 
@@ -19,7 +19,7 @@
   justify-content: center;
   width: auto;
   margin: 50px 0 0 50px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .header .logo h2 {
@@ -28,7 +28,7 @@
 }
 
 .header .logo span {
-  color: #31B5FF;
+  color: #31b5ff;
 }
 
 .logo-opacity {
@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: right .8s cubic-bezier(0.6, 0, 0, .9);
+  transition: right 0.8s cubic-bezier(0.6, 0, 0, 0.9);
 }
 
 .burger {
@@ -64,14 +64,14 @@
 
 .burger:hover > .line {
   background-color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .line {
   width: 100%;
   height: 2px;
   background-color: #ccc;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .line-2 {
@@ -84,25 +84,25 @@
 
 .change .line {
   margin: -20px -20px 0;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .change .line-1 {
   transform: rotateZ(-405deg) translate(-8px, 6px);
-  background-color: #31B5FF !important;
-  transition: ease-in-out .5s;
+  background-color: #31b5ff !important;
+  transition: ease-in-out 0.5s;
 }
 
 .change .line-2 {
   transform: translateX(100%);
   opacity: 0;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .change .line-3 {
   transform: rotateZ(405deg) translate(-8px, -6px);
-  background-color: #31B5FF !important;
-  transition: ease-in-out .5s;
+  background-color: #31b5ff !important;
+  transition: ease-in-out 0.5s;
 }
 
 .nav-list {
@@ -114,17 +114,17 @@
   list-style: none;
   margin: 25px;
   color: #eee;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 .nav-list:hover > .nav-item .nav-link {
   opacity: 0;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .nav-item .nav-link:hover {
   transform: scale(1.2);
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
   z-index: 98;
   opacity: 1 !important;
 }
@@ -137,30 +137,30 @@
   text-transform: uppercase;
   position: relative;
   padding: 3px 0;
-  transition: all .1s;
+  transition: all 0.1s;
   display: inline-block;
   cursor: pointer;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .nav-item #contact {
-  color: #31B5FF;
+  color: #31b5ff;
 }
 
-.nav-item .nav-link::before, 
+.nav-item .nav-link::before,
 .nav-item .nav-link::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
-  background-color: #31B5FF;
+  background-color: #31b5ff;
   position: absolute;
   left: 0;
   transform: scaleX(0);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
- /*Contact*/
-.nav-item:last-child .nav-link:before, 
+/*Contact*/
+.nav-item:last-child .nav-link:before,
 .nav-item:last-child .nav-link:after {
   background-color: #fff;
 }
@@ -182,7 +182,7 @@
 .nav-item .active::before,
 .nav-item .active::after {
   transform: scaleX(1);
-  transition: linear .1s;
+  transition: linear 0.1s;
 }
 
 .nav-item:before {
@@ -197,25 +197,25 @@
   pointer-events: none;
   opacity: 0;
   letter-spacing: 20px;
-  transition: .5s;
+  transition: 0.5s;
   white-space: nowrap;
 }
 
 .nav-item:hover:before {
-  opacity: .05;
+  opacity: 0.05;
   letter-spacing: 0;
 }
 
 @media screen and (max-width: 680px) {
   .logo {
     margin: 20px 0 0 20px !important;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .burger {
     top: 30px;
     right: 20px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }
 @media screen and (max-width: 645px) {
@@ -230,7 +230,7 @@
 }
 @media screen and (max-width: 480px) {
   .nav-link {
-    font-size: 1.5rem !important;
+    font-size: 2.2em !important;
   }
 }
 @media screen and (max-width: 425px) {
