@@ -32,15 +32,17 @@ export default function Contact() {
     },
     validationSchema,
     onSubmit(values) {
-      setStatus("Sending...");
+      setInterval(() => {
+        setStatus("Contact me");
+      }, 2500);
       axios.post("http://localhost:3001/send", values);
       setTimeout(() => {
-        resetForm({});
-        setStatus("Contact me");
-      }, 2000);
-      setTimeout(() => {
-        setStatus("Thanks :)");
+        setStatus("Sending...");
       }, 100);
+      setTimeout(() => {
+        resetForm({});
+        setStatus("Thanks :)");
+      }, 1200);
     },
   });
 
