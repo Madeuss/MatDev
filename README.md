@@ -16,8 +16,8 @@
 
 <br>
 
-<p align="center">
-  <img alt="Frontend" src=".github/home.gif" width="100%"/>
+<p align="left">
+  <img alt="Frontend" src=".github/home_gif.gif" width="100%"/>
 </p>
 
 ## :rocket: Technologies
