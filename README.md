@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-    ⛅️ My Portfolio 🌈 <br> 
+    💻 My Portfolio ⚽ <br> 
 </h4>
 
 
