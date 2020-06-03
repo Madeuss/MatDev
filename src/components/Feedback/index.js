@@ -33,7 +33,7 @@ export default function Contact() {
 
         <section
           id="dialogue"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-offset="0"
           data-aos-delay="1200"
           data-aos-duration="500"
