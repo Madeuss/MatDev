@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import styled from "styled-components";
 
 import "./styles.css";
 
@@ -45,6 +46,15 @@ export default function Contact() {
       }, 1200);
     },
   });
+
+  const Span = styled.span`
+    color: #31b5ff;
+    font-size: 1em;
+    opacity: 0.8;
+    @media (max-width: 500px) {
+      font-size: 2em;
+    }
+  `;
 
   return (
     <container className="section-container contact-container">
@@ -101,7 +111,7 @@ export default function Contact() {
               value={values.name || ""}
               onChange={handleChange}
             />
-            {errors.name ? errors.name : null}
+            {errors.name ? <Span>{errors.name}</Span> : null}
           </div>
           <div className="form-item">
             <label>Your email</label>
@@ -113,7 +123,7 @@ export default function Contact() {
               value={values.email || ""}
               onChange={handleChange}
             />
-            {errors.email ? errors.email : null}
+            {errors.email ? <Span>{errors.email}</Span> : null}
           </div>
           <div className="form-item" id="message-item">
             <label>Drop me a line</label>
@@ -126,7 +136,7 @@ export default function Contact() {
               value={values.message || ""}
               onChange={handleChange}
             />
-            {errors.message ? errors.message : null}
+            {errors.message ? <Span>{errors.message}</Span> : null}
             <button className="contact-submit-btn" type="submit">
               {status}
             </button>
