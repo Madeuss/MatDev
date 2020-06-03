@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaFacebookSquare, FaHeart } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import { TiDocumentAdd } from "react-icons/ti";
 
 import { Link } from "react-scroll";
@@ -38,7 +38,7 @@ export default function About() {
             data-aos-anchor-placement="top-center"
           >
             <img src={vector} alt="vector" />
-            <img src={me} alt="Photo of Mateus" />
+            <img src={me} alt="Mateus" />
           </div>
         </aside>
         <aside className="about-aside">

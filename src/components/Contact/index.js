@@ -72,7 +72,7 @@ export default function Contact() {
           <h1>CONTACT</h1>
           <h1>CONTACT</h1>
           <h1>CONTACT</h1>
-          <img src={gif} alt="Hi-five contact gif" />
+          <img src={gif} alt="Hi-five contact" />
         </section>
 
         <div
@@ -86,7 +86,7 @@ export default function Contact() {
           data-aos-once="true"
           data-aos-anchor-placement="top-center"
         >
-          <img src={astronaut} alt="Astronaut image" />
+          <img src={astronaut} alt="Astronaut" />
         </div>
       </aside>
       <aside className="form-side">
