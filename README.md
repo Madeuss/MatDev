@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <a href="#rocket-tecnologias">Technologies/a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-principais-conceitos-abordados">Concepts</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-configuração-do-projeto">Take a look</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -37,12 +37,12 @@
 
 ## 📚 Main concepts covered
 
--..
--..
--..
--..
--..
--..
+- 
+- 
+- 
+- 
+- 
+- 
 
 ## 🤔 Configuração do projeto
 
