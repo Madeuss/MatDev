@@ -152,7 +152,7 @@ export default function Contact() {
             Facebook
           </a>
           <a
-            href="https://www.linkedin.com/in/mateus-souza-da-silva-22654117a/"
+            href="https://www.linkedin.com/in/mateusdevsouza"
             target="_blank"
             rel="noopener noreferrer"
           >

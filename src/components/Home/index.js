@@ -114,7 +114,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/mateus-souza-da-silva-22654117a/"
+            href="http://www.linkedin.com/in/mateusdevsouza"
             target="_blank"
             rel="noopener noreferrer"
           >
