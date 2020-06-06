@@ -53,12 +53,14 @@ export default function About() {
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
           >
-            {/* eslint-disable-next-line */}
             <h2>
               Hey! my name is <span>Mateus</span>, you can call me{" "}
-              <span>Mat</span>, I'm a programming student and a soccer lover
-              (yes, that sums me up) but how you is my friend, right?! I'm gonna
-              tell you a little secret: I am a great soccer player too.{" "}
+              <span>
+                Mat
+              </span>, I'm a programming student and a soccer lover (yes, that
+              sums me up) but how you is my friend, right?! I'm gonna tell you a
+              little bit more about me: Besides being a reasonable soccer
+              player, I love Harry Potter and Astronomy{" "}
             </h2>
             <p>Feel free to text me :D</p>
           </div>
