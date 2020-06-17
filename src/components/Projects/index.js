@@ -107,70 +107,73 @@ export default function Projects() {
 
   return (
     <container className="projects-container" id="projects-container">
-      {data.name ? (
-        <section className="projects-section" id="info-section">
-          <a
-            href="https://github.com/Madeuss"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="social-icon" size={35} color={"#B0B0B0"} />
-          </a>
-          <section className="slide-count">
-            <h3>0{index + 1}</h3>
-            <div className="line-progress" id="line-count" />
-            <h3>0{nextIndex}</h3>
-          </section>
-          <section className="project-data">
-            <h1>{data.name}</h1>
-            <p>{selectDescription(data.name)}</p>
-          </section>
+      {data.name
+        ? (
+          <section className="projects-section" id="info-section">
+            <a
+              href="https://github.com/Madeuss"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" size={35} color={"#B0B0B0"} />
+            </a>
+            <section className="slide-count">
+              <h3>0{index + 1}</h3>
+              <div className="line-progress" id="line-count" />
+              <h3>0{nextIndex}</h3>
+            </section>
+            <section className="project-data">
+              <h1>{data.name}</h1>
+              <p>{selectDescription(data.name)}</p>
+            </section>
 
-          <div className="project-title">
-            <div className="title-line" />
-            <h2>projects</h2>
-            <div className="title-line" />
-          </div>
-        </section>
-      ) : (
-        <section className="projects-section" id="info-section">
-          <a
-            href="https://github.com/Madeuss"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="social-icon" size={35} color={"#B0B0B0"} />
-          </a>
-          <section className="slide-count">
-            <h3>02</h3>
-            <div className="line-progress" id="line-count" />
-            <h3>03</h3>
+            <div className="project-title">
+              <div className="title-line" />
+              <h2>projects</h2>
+              <div className="title-line" />
+            </div>
           </section>
-          <section
-            className="project-data"
-            data-aos="fade-right"
-            data-aos-offset="-400"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-          >
-            <h1>Covid-19-Tracker</h1>
-            <p>
-              😷This is an web app wich tracks the Covid-19 incidents around the
-              world. You can also check the numbers in a specific location 🌎{" "}
-            </p>
-          </section>
+        )
+        : (
+          <section className="projects-section" id="info-section">
+            <a
+              href="https://github.com/Madeuss"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="social-icon" size={35} color={"#B0B0B0"} />
+            </a>
+            <section className="slide-count">
+              <h3>02</h3>
+              <div className="line-progress" id="line-count" />
+              <h3>03</h3>
+            </section>
+            <section
+              className="project-data"
+              data-aos="fade-right"
+              data-aos-offset="-400"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              <h1>Covid-19-Tracker</h1>
+              <p>
+                😷This is an web app wich tracks the Covid-19 incidents around
+                the world. You can also check the numbers in a specific location
+                🌎{" "}
+              </p>
+            </section>
 
-          <div className="project-title">
-            <div className="title-line" />
-            <h2>projects</h2>
-            <div className="title-line" />
-          </div>
-        </section>
-      )}
+            <div className="project-title">
+              <div className="title-line" />
+              <h2>projects</h2>
+              <div className="title-line" />
+            </div>
+          </section>
+        )}
       <section className="projects-section" id="repo-section">
         <Carousel
           fade={true}
@@ -231,29 +234,31 @@ export default function Projects() {
             {data.language ? <p>{data.language}</p> : <p>JavaScript</p>}
           </div>
           <div className="see-app">
-            {data.name ? (
-              <a
-                href={selectDeployLink(data.name)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  <h5>See the app</h5>
-                  <MdWeb className="mdweb-icon" size={20} color={"#ccc"} />
-                </span>
-              </a>
-            ) : (
-              <a
-                href="https://worldcovidtracker.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  <h5>See the app</h5>
-                  <MdWeb className="mdweb-icon" size={20} color={"#ccc"} />
-                </span>
-              </a>
-            )}
+            {data.name
+              ? (
+                <a
+                  href={selectDeployLink(data.name)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>
+                    <h5>See the app</h5>
+                    <MdWeb className="mdweb-icon" size={20} color={"#ccc"} />
+                  </span>
+                </a>
+              )
+              : (
+                <a
+                  href="https://worldcovidtracker.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>
+                    <h5>See the app</h5>
+                    <MdWeb className="mdweb-icon" size={20} color={"#ccc"} />
+                  </span>
+                </a>
+              )}
           </div>
         </div>
         <div
@@ -268,23 +273,25 @@ export default function Projects() {
           data-aos-anchor-placement="top-center"
         >
           <h5>See more?</h5>
-          {data.html_url ? (
-            <a href={data.html_url} target="_blank" rel="noopener noreferrer">
-              <p id="explore">
-                Explore the code <IoIosArrowRoundForward className="arrow" />
-              </p>
-            </a>
-          ) : (
-            <a
-              href="https://github.com/Madeuss/Covid-19-Tracker"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p id="explore">
-                Explore the code <IoIosArrowRoundForward className="arrow" />
-              </p>
-            </a>
-          )}
+          {data.html_url
+            ? (
+              <a href={data.html_url} target="_blank" rel="noopener noreferrer">
+                <p id="explore">
+                  Explore the code <IoIosArrowRoundForward className="arrow" />
+                </p>
+              </a>
+            )
+            : (
+              <a
+                href="https://github.com/Madeuss/Covid-19-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p id="explore">
+                  Explore the code <IoIosArrowRoundForward className="arrow" />
+                </p>
+              </a>
+            )}
         </div>
       </section>
     </container>
