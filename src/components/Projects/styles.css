@@ -154,8 +154,8 @@
   width: 40px;
   height: 40px;
   padding: 15px;
-  left: -80vw;
-  bottom: 10%;
+  left: -81vw;
+  bottom: 10px;
 }
 
 .carousel-control-prev-icon {
@@ -164,8 +164,8 @@
   width: 40px;
   height: 40px;
   padding: 15px;
-  right: 48vw;
-  bottom: 10%;
+  right: 49vw;
+  bottom: 10px;
   pointer-events: none;
   opacity: 0.5;
   z-index: 1;
@@ -242,18 +242,12 @@
 }
 
 .slide-div {
-  height: 550px;
+  height: calc(100vh - 100px);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   position: relative;
-}
-
-.slide-item {
-  pointer-events: none !important;
-  outline: none;
-  text-indent: -9999px;
 }
 
 #pokedex-slide {
