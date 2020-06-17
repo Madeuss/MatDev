@@ -128,7 +128,7 @@ export default function Home() {
             <FaGithub className="social-icon" size={25} color={"#B0B0B0"} />
           </a>
           <a
-            href="http://api.whatsapp.com/send?1=pt_BR&phone=5511965823661"
+            href="https://api.whatsapp.com/send?phone=5511930568060&text=Oi"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -61,7 +61,7 @@ export default function Contact() {
       <aside className="contact-left">
         <span className="whatsapp-icon">
           <a
-            href="http://api.whatsapp.com/send?1=pt_BR&phone=5511965823661"
+            href="https://api.whatsapp.com/send?phone=5511930568060&text=Oi"
             target="_blank"
             rel="noopener noreferrer"
           >
