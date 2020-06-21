@@ -81,7 +81,7 @@
   position: absolute;
   top: 2em;
   right: 2em;
-  z-index: 1;
+  z-index: 20;
 }
 
 .whatsapp-icon #whatsapp-icon {
