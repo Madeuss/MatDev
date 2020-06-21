@@ -58,7 +58,7 @@ export default function About() {
               <span>
                 Mat
               </span>, I'm a programming student and a soccer lover (yes, that
-              sums me up) but how you is my friend, right?! I'm gonna tell you a
+              sums me up) but how you is my friend, good?! I'm gonna tell you a
               little bit more about me: Besides being a reasonable soccer
               player, I love Harry Potter and Astronomy{" "}
             </h2>
