@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .feedback-container {
   position: absolute;
@@ -6,7 +6,7 @@
   background-color: #111111;
   width: 100%;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 #feedback-header #title h1 {
@@ -37,9 +38,9 @@
 
 #feedback-header #title p {
   position: absolute;
-  opacity: .8;
-  color: #07C4FF;
-  font-size: clamp(.8em, 1em + .8vw, 4rem);
+  opacity: 0.7;
+  color: #07c4ff;
+  font-size: clamp(0.8em, 1em + 0.8vw, 4rem);
 }
 
 #dialogue {
@@ -47,7 +48,7 @@
   width: 60%;
   text-align: center;
   color: #fff;
-  font-size: clamp(.8em, .7em + .01vw, 3rem);
+  font-size: clamp(0.8em, 0.7em + 0.01vw, 3rem);
 }
 
 #dialogue p + p {
@@ -65,10 +66,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: grab;
 }
 
 .swiper-slide {
-  color:#fff;
+  color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: grid;
@@ -81,10 +83,32 @@
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-color: rgb(162, 224, 243);
+  background-color: #151515;
   position: absolute;
   top: 20px;
+  transition: 0.5s;
 }
+
+/* FEEDBACKS PHOTOS */
+.swiper-slide #mom-photo {
+  background-image: url("./assets/mom.png");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-slide #brodi-photo {
+  background-image: url("./assets/brodi.png");
+  background-size: 135%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.swiper-slide #digo-photo {
+  background-image: url("./assets/diguinho.png");
+  background-size: 180%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+/*-----------------------------*/
 
 .swiper-slide #quotation-icon {
   margin-top: 25px;
@@ -92,7 +116,7 @@
 
 .swiper-slide .feedback-text {
   width: 80%;
-  font-size: clamp(.8em, .9em, 3rem);
+  font-size: clamp(0.8em, 0.9em, 3rem);
   font-style: italic;
   font-weight: 100;
   display: flex;
@@ -105,19 +129,21 @@
 .swiper-slide .feedback-name {
   position: absolute;
   bottom: 10px;
-  font-size: clamp(.8em, .8em, 3rem);
+  font-size: clamp(0.8em, 0.8em, 3rem);
+  text-align: center;
 }
 
 .swiper-slide .feedback-name p:nth-child(1) {
-  color: #07C4FF;
-  margin: 3px 0 0 -5px;
+  color: #07c4ff;
+  margin: 3px 0 0 0;
+  text-align: center;
 }
 
 .swiper-button-next {
   width: 50px;
   height: 50px;
   font-size: 5px !important;
-  color: #07C4FF;
+  color: #07c4ff;
 }
 
 @media screen and (max-width: 740px) {
@@ -142,7 +168,7 @@
   .swiper-slide .feedback-name {
     font-size: 1.4em;
   }
-  
+
   .swiper-slide #quotation-icon {
     margin-top: 60px;
   }
