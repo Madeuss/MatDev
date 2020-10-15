@@ -47,7 +47,7 @@
 ## 🤔 Project config 
 
 - Clone the repository
-- *npm init/yarn command*
+- *npm install/yarn command*
 - Execute 'npm start' or 'yarn start'
 
 ## Take a look of the portfolio deployed :smile:
